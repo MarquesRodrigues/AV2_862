@@ -3,11 +3,12 @@ import styled from 'styled-components/native';
 export const Container = styled.View`
   background-color:#87CEFA;
   flex:1;
-  padding:5px 10px 0px 10px;
+  padding:5px 10px 0px 5px;
   flex-direction:column;
   justify-content: flex-end;
   align-items:center;
   margin-top:25px;
+  
 `;
 
 export const ContainerEmail = styled.View`

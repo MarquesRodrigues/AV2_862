@@ -1,5 +1,7 @@
 import React, { useState, useContext, useEffect } from 'react';
 import { Text } from 'react-native';
+import { ScrollView } from 'react-native';
+import Constants from 'expo-constants';
 
 import { UsuarioContext } from '../../contexts/user';
 
@@ -19,7 +21,7 @@ import {
 import firebase from 'firebase';
 import 'firebase/firestore';
 
-const Chat1 = ({navigation}) => {
+const Chat2 = ({navigation}) => {
 
   const [messages, setMessages] = useState([]);
   const [newMessage, setNewMessage] = useState("");
@@ -70,12 +72,13 @@ const Chat1 = ({navigation}) => {
 
   return (
     <Container>
-      <ContainerMessages>
-        {messages.map((message) => (
-          <Message key={message.id}>{message.texto}</Message>
-        ))}
-      </ContainerMessages>
-
+      <ScrollView>
+        <ContainerMessages>
+          {messages.map((message) => (
+            <Message key={message.id}>{message.texto}</Message>
+          ))}
+        </ContainerMessages>
+      </ScrollView>
       <ContainerEmail>
         <TextoEmail>{"Usuário logado: " + user.email}</TextoEmail>
       </ContainerEmail>
@@ -100,4 +103,4 @@ const Chat1 = ({navigation}) => {
   );
 }
 
-export default Chat1
+export default Chat2

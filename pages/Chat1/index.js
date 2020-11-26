@@ -1,5 +1,7 @@
 import React, { useState, useContext, useEffect } from 'react';
 import { Text } from 'react-native';
+import { ScrollView } from 'react-native';
+import Constants from 'expo-constants';
 
 import { UsuarioContext } from '../../contexts/user';
 
@@ -70,12 +72,13 @@ const Chat1 = ({navigation}) => {
 
   return (
     <Container>
-      <ContainerMessages>
-        {messages.map((message) => (
-          <Message key={message.id}>{message.texto}</Message>
-        ))}
-      </ContainerMessages>
-
+      <ScrollView>
+        <ContainerMessages>
+          {messages.map((message) => (
+            <Message key={message.id}>{message.texto}</Message>
+          ))}
+        </ContainerMessages>
+      </ScrollView>
       <ContainerEmail>
         <TextoEmail>{"Usuário logado: " + user.email}</TextoEmail>
       </ContainerEmail>
