@@ -1,0 +1,36 @@
+import React, { useState, useContext, useReducer } from 'react';
+import { Text } from 'react-native';
+
+import { UsuarioContext } from '../../contexts/user';
+
+import {
+  Container,
+  Texto,
+  ContainerButtons,
+  Button,
+  ButtonText
+} from './styles';
+
+
+
+const Settings = () => {
+
+  const { signOut } = useContext(UsuarioContext)
+
+  return (
+    <Container>
+      <ContainerButtons>
+        <Button
+          invert={true}
+          onPress={() => {
+            signOut();
+          }}
+        >
+          <ButtonText invert={true}>Deslogar</ButtonText>
+        </Button>
+      </ContainerButtons>
+    </Container>
+  );
+}
+
+export default Settings
