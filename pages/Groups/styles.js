@@ -1,7 +1,7 @@
 import styled from 'styled-components/native';
 
 export const Container = styled.View`
-  background-color:#AB1B71;
+  background-color:#87CEFA;
   flex:1;
   padding:10px 10px 0px 10px;
   flex-direction:column;
@@ -18,8 +18,8 @@ export const Button = styled.TouchableOpacity`
   flex:1;
   width:100%;
   height:50%;
-  background-color: ${props => props.invert ? "#fff" : "#ae1b73"};
-  border:2px solid #ae1b73;
+  background-color: ${props => props.invert ? "#fff" : "#87CEFA"};
+  border:2px solid #87CEFA;
   border-radius:25px;
   justify-content:center;
   align-items:center;
@@ -27,7 +27,7 @@ export const Button = styled.TouchableOpacity`
 `;
 
 export const ButtonText = styled.Text`
-  color:${props => props.invert ? "#ae1b73" : "#fff"};
+  color:${props => props.invert ? "#87CEFA" : "#fff"};
   font-size:16px;
   font-weight:bold;
 `;

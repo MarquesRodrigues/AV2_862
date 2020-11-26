@@ -25,7 +25,7 @@ export const ContainerBotoes = styled.View`
 `;
 export const Botao = styled.TouchableOpacity`
   border-bottom-width:4px;
-  border-bottom-color:${props => props.lastClick ? "#AE1B73" : "#fff"};
+  border-bottom-color:${props => props.lastClick ? "#87CEFA" : "#fff"};
   height:60px;
   margin: 0px 5px;
   flex:1;
@@ -62,7 +62,7 @@ export const ButtonForgot = styled.TouchableOpacity`
   `
 
 export const ForgotPassword = styled.Text`
-  color:#ae1b73;
+  color:#87CEFA;
   font-size:14px;
 `
 
@@ -76,8 +76,8 @@ export const Button = styled.TouchableOpacity`
   flex:1;
   width:100%;
   height: 60px;
-  background-color: ${props => props.invert ? "#fff" : "#ae1b73"};
-  border:1px solid #ae1b73;
+  background-color: ${props => props.invert ? "#fff" : "#87CEFA"};
+  border:1px solid #87CEFA;
   border-radius:5px;
   justify-content:center;
   align-items:center;
@@ -85,7 +85,7 @@ export const Button = styled.TouchableOpacity`
 `
 
 export const ButtonText = styled.Text`
-  color:${props => props.invert ? "#ae1b73" : "#fff"};
+  color:${props => props.invert ? "#87CEFA" : "#fff"};
   font-size:16px;
   font-weight:bold;
 `

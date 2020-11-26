@@ -1,7 +1,7 @@
 import styled from 'styled-components/native';
 
 export const Container = styled.View`
-  background-color:#AB1B71;
+  background-color:#87CEFA;
   flex:1;
   padding:5px 10px 0px 10px;
   flex-direction:column;
@@ -11,7 +11,7 @@ export const Container = styled.View`
 `;
 
 export const ContainerEmail = styled.View`
-  background-color: #AE1B73;
+  background-color: #87CEFA;
   justify-content: center;
   align-items: center;
   height: 60px;
@@ -51,8 +51,8 @@ export const Button = styled.TouchableOpacity`
   flex:1;
   width:100%;
   height: 60px;
-  background-color: ${props => props.invert ? "#fff" : "#ae1b73"};
-  border:1px solid #ae1b73;
+  background-color: ${props => props.invert ? "#fff" : "#87CEFA"};
+  border:1px solid #87CEFA;
   border-radius:5px;
   justify-content:center;
   align-items:center;
@@ -60,7 +60,7 @@ export const Button = styled.TouchableOpacity`
 `
 
 export const ButtonText = styled.Text`
-  color:${props => props.invert ? "#ae1b73" : "#fff"};
+  color:${props => props.invert ? "#87CEFA" : "#fff"};
   font-size:16px;
   font-weight:bold;
   `
